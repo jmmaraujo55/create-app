@@ -1,0 +1,24 @@
+{
+  "name": "create-app",
+  "version": "1.2.2",
+  "description": "",
+  "main": "src/cli.js",
+  "bin": {
+    "create-app": "./bin/create-app.js"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "Joao Araujo <admin@joaoaraujo.dev>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jmmaraujo55/create-app"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0"
+  }
+}
