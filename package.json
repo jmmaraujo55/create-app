@@ -12,6 +12,7 @@
   "author": "Joao Araujo <admin@joaoaraujo.dev>",
   "license": "MIT",
   "dependencies": {
+    "colors": "1.4.0",
     "commander": "^9.4.0"
   },
   "repository": {
