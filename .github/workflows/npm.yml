@@ -1,8 +1,21 @@
-name: Publish Package to npmjs
+name: npm version patch
 on:
   push:
     branches:
       - "main"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm version patch
+
+---
+name: Publish Package to npmjs
+on:
+  workflow_run:
+    workflows: ["npm version patch"]
+    types:
+      - "completed"
 jobs:
   build:
     runs-on: ubuntu-latest
