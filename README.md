@@ -1,5 +1,5 @@
 
-# What's Poundcake?
+# What's create-app?
 
 A NodeJS application generator to scaffold new projects.
 
