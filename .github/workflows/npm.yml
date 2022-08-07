@@ -1,15 +1,3 @@
-name: npm version patch
-on:
-  push:
-    branches:
-      - "main"
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - run: npm version patch
-
----
 name: Publish Package to npmjs
 on:
   workflow_run:
@@ -26,6 +14,8 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
+      - run: npm version patch
+      - run: git push
       - run: npm ci
       - run: npm publish --access public
         env:
