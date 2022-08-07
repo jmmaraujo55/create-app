@@ -1,9 +1,8 @@
 name: Publish Package to npmjs
 on:
-  workflow_run:
-    workflows: ["npm version patch"]
-    types:
-      - "completed"
+  push:
+    branches:
+      - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
